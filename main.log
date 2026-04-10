@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.4.10)  10 APR 2026 17:39
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.4.10)  11 APR 2026 01:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1754,15 +1754,15 @@ XGyreTermes(0)/m/n/12.045 11.72%\TU/FandolSong-Regular(1)/m/n/12.045 。|
 (./pages/chapter4.aux) (./pages/chapter5.aux) (./pages/thanks.aux)
 (./pages/null.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 96FFE9A793F982BC71956A051F4731A5;9679.
+(rerunfilecheck)             Checksum: EB5E8316D5223848CC3AC934CD130E9F;9679.
  ) 
 Here is how much of TeX's memory you used:
- 44761 strings out of 477728
- 1074349 string characters out of 5842238
- 1695679 words of memory out of 5000000
- 64560 multiletter control sequences out of 15000+600000
- 492355 words of font info for 166 fonts, out of 8000000 for 9000
+ 44762 strings out of 477728
+ 1074622 string characters out of 5842238
+ 1456673 words of memory out of 5000000
+ 64559 multiletter control sequences out of 15000+600000
+ 492379 words of font info for 169 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 103i,20n,105p,1236b,1791s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 103i,20n,105p,1236b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (52 pages, 736148 bytes).
+Output written on main.xdv (52 pages, 714100 bytes).

@@ -70,5 +70,5 @@
 \contentsline {chapter}{\numberline { 5\hspace {.3em}}总结与展望}{37}{chapter.5}%
 \contentsline {section}{\numberline {5.1}工作总结}{37}{section.5.1}%
 \contentsline {section}{\numberline {5.2}研究展望}{37}{section.5.2}%
-\contentsline {chapter}{参考文献}{39}{section*.13}%
-\contentsline {chapter}{致谢}{43}{section*.15}%
+\contentsline {chapter}{参考文献}{39}{section*.16}%
+\contentsline {chapter}{致谢}{43}{section*.18}%

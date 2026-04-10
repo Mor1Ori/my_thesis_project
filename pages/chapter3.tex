@@ -108,50 +108,53 @@ I_0 = G_{\mathrm{txt2img}}(p, n, s), \quad I_t = G_{\mathrm{img2img}}(I_{t-1}, p
 
 \section{关键算法描述}
 
+\SetKwInput{KwIn}{输入}
+\SetKwInput{KwOut}{输出}
+
 \subsection{图像预处理算法}
 
 图像预处理算法的目标是在保持样本主体区域尽量完整的前提下，将原始风格样本变换为统一尺寸的训练输入，并同步导出训练所需的文本元数据与源样本映射。该算法以递归扫描、有效性校验、中心裁剪、固定比例划分和元数据导出为主线，强调输入规范化与结果可回溯。
 
-对应的算法流程可表示为：
+其算法流程可表述为：
 
-\begin{lstlisting}[basicstyle=\ttfamily\small,breaklines=true,frame=single]
-Algorithm 3.1 Image Preprocessing
-Input: raw image directory D, target resolution R, validation ratio \rho
-Output: processed train/val sets and metadata files
-1: Scan all images in D recursively
-2: Remove broken or unreadable files
-3: For each valid image x_i do
-4: \quad crop center square region and resize to (R,R)
-5: \quad read sidecar caption if exists
-6: End For
-7: Shuffle all valid samples with fixed random seed
-8: Split into D_train and D_val according to \rho
-9: Export images, metadata jsonl and source maps
-\end{lstlisting}
+\begin{algorithm}[htbp]
+\caption{图像预处理算法}
+\KwIn{原始图像目录 $D$，目标分辨率 $R$，验证集比例 $\rho$}
+\KwOut{处理后的训练集、验证集及元数据文件}
+递归扫描目录 $D$ 中的全部图像文件\;
+移除损坏或无法读取的图像文件\;
+\ForEach{有效图像 $x_i$}{
+  裁剪中心正方形区域，并缩放到 $(R,R)$\;
+  若存在同名文本文件，则读取对应 caption\;
+}
+使用固定随机种子打乱全部有效样本\;
+按照比例 $\rho$ 划分得到 $D_{\mathrm{train}}$ 与 $D_{\mathrm{val}}$\;
+导出图像文件、metadata jsonl 及源样本映射关系\;
+\end{algorithm}
 
 \subsection{LoRA训练算法}
 
 LoRA 风格学习算法以预训练扩散模型为基础，通过冻结主体参数并仅优化低秩适配器，完成特定风格统计分布的高效迁移。该算法的关键在于：一方面保留底模已有的场景构建能力，另一方面利用目标风格数据对注意力投影层进行局部重塑，从而在较低训练成本下获得可观测的风格偏移。
 
-该过程可以概括为如下伪代码：
+其算法流程可表述为：
 
-\begin{lstlisting}[basicstyle=\ttfamily\small,breaklines=true,frame=single]
-Algorithm 3.2 LoRA Training for Style Adaptation
-Input: pretrained diffusion model M, training set D_train, rank r
-Output: LoRA weights \Delta W
-1: Freeze VAE, text encoder and original U-Net parameters
-2: Insert LoRA adapters into attention projection layers
-3: For each training step do
-4: \quad Encode image x to latent z_0
-5: \quad Encode caption c to text embedding h
-6: \quad Sample timestep t and Gaussian noise \epsilon
-7: \quad Construct noisy latent z_t
-8: \quad Predict \hat{\epsilon}=\epsilon_\theta(z_t,t,h)
-9: \quad Compute diffusion loss L = ||\epsilon-\hat{\epsilon}||_2^2
-10: \quad Update only LoRA parameters with AdamW
-11: End For
-12: Save LoRA weights and training state
-\end{lstlisting}
+\begin{algorithm}[htbp]
+\caption{LoRA 风格适配训练算法}
+\KwIn{预训练扩散模型 $M$，训练集 $D_{\mathrm{train}}$，LoRA 秩 $r$}
+\KwOut{LoRA 权重 $\Delta W$}
+冻结 VAE、文本编码器与原始 U-Net 主体参数\;
+在注意力投影层中插入 LoRA 适配器\;
+\ForEach{训练步骤}{
+  将图像 $x$ 编码为潜变量 $z_0$\;
+  将 caption $c$ 编码为文本嵌入 $h$\;
+  采样时间步 $t$ 与高斯噪声 $\epsilon$\;
+  构造带噪潜变量 $z_t$\;
+  预测 $\hat{\epsilon}=\epsilon_{\theta}(z_t,t,h)$\;
+  计算扩散损失 $L=\lVert \epsilon-\hat{\epsilon}\rVert_2^2$\;
+  仅使用 AdamW 更新 LoRA 参数\;
+}
+保存 LoRA 权重与训练状态\;
+\end{algorithm}
 
 \subsection{视频递推生成算法}
 
@@ -159,21 +162,19 @@ Output: LoRA weights \Delta W
 
 其算法流程可表述为：
 
-\begin{lstlisting}[basicstyle=\ttfamily\small,breaklines=true,frame=single]
-Algorithm 3.3 Recursive Video Prototype Generation
-Input: prompt p, negative prompt n, LoRA adapter L, frame number T
-Output: frame sequence {I_t}_{t=0}^{T-1}
-1: Load text-to-image and image-to-image pipelines
-2: Optionally load LoRA adapter L into both pipelines
-3: Generate first frame I_0 from text-to-image pipeline
-4: For t = 1 to T-1 do
-5: \quad Use I_{t-1} as input image
-6: \quad Generate I_t with image-to-image pipeline and strength \alpha
-7: End For
-8: Save frames and compose GIF/video manifest
-\end{lstlisting}
-
-该算法实现简单、可复现性强，适合作为当前研究的视频阶段验证方案；同时它也清晰暴露出局限性，即运动先验主要来自连续图像扰动而非显式时序建模，这正是后续研究可继续深入的方向。
+\begin{algorithm}[htbp]
+\caption{视频递推生成原型算法}
+\KwIn{提示词 $p$，负向提示词 $n$，LoRA 适配器 $L$，帧数 $T$}
+\KwOut{帧序列 $\{I_t\}_{t=0}^{T-1}$}
+加载 text-to-image 与 image-to-image 推理管线\;
+按需将 LoRA 适配器 $L$ 注入两条推理管线\;
+通过 text-to-image 管线生成首帧 $I_0$\;
+\For{$t\leftarrow1$ \KwTo $T-1$}{
+  将上一帧 $I_{t-1}$ 作为输入图像\;
+  在强度参数 $\alpha$ 下通过 image-to-image 管线生成 $I_t$\;
+}
+保存全部帧，并组合为 GIF 或视频清单文件\;
+\end{algorithm}
 
 \section{本章小结}
 
