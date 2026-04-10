@@ -1,15 +1,22 @@
-% Auto-generated abstract page
 \phantomsection
 \pagenumbering{Roman}
 \addcontentsline{toc}{chapter}{摘\hspace{1em}要}
 
-\begin{cnabstract}{待补充}
-原始 Word 文档中的中文摘要尚未填写，此处保留占位。
+\begin{cnabstract}{特定风格；LoRA技术；视频生成；扩散模型；参数高效微调；时序一致性}
+随着生成式人工智能的飞速发展，如何以低成本实现具有特定艺术风格的高质量视频生成已成为当前研究的热点。传统的视频生成模型往往依赖海量算力与全参数微调，且难以在保持特定风格的同时兼顾时序一致性。本文提出了一种基于LoRA（Low-Rank Adaptation）技术的特定风格视频生成研究框架，旨在有限的算力和样本条件下，探索一种兼顾风格表达与工程可行性的技术路线。
+
+本文首先阐述了扩散模型与潜空间生成技术的基本原理，分析了LoRA参数高效微调技术在特定风格适配中的优势。在数据准备阶段，通过对特定动画风格图像进行规范化预处理与自动标注，构建了包含810张样品的风格数据集。在模型训练层面，本文以Stable Diffusion 1.5为核心，设计了LoRA注入策略，并对比了不同底模（StorybookRedmond、Counterfeit-V3.0）在相近训练强度下的表现差异。实验结果表明，加载LoRA适配器能使模型在颜色分布、线条强度和场景组织上产生稳定且可观测的风格偏移，且具有强视觉先验的底模能显著提升风格迁移的强度，但需在风格纯度与内容保真度之间进行权衡。
+
+在视频验证阶段，本文构建了递推式短视频生成原型，并引入了无参考时序一致性评估指标。量化分析显示，加载风格LoRA后，视频的相邻帧像素平均绝对差（MAD）和边缘变化平均绝对差（MED）均有所下降，证明了风格能力向连续帧迁移的有效性。针对实验中暴露出的亮度稳定性（LS）波动问题，本文分析了其产生的物理机制，并提出了后续引入显式运动模块与结构控制技术的改进方向。本研究为独立创作者和中小团队实现个性化视频内容生产提供了一套可复用的技术参考方案。
 \end{cnabstract}
 
 \phantomsection
 \addcontentsline{toc}{chapter}{ABSTRACT}
 
-\begin{enabstract}{To be added}
-The English abstract is still empty in the source Word document, so a placeholder is kept here.
+\begin{enabstract}{Specific Style; LoRA Technology; Video Generation; Diffusion Models; Parameter-Efficient Fine-Tuning; Temporal Consistency}
+With the rapid development of Artificial Intelligence Generated Content (AIGC), achieving high-quality video generation with specific artistic styles at a low cost has become a focal point of current research. Traditional video generation models typically rely on massive computational power and full-parameter fine-tuning, often struggling to balance specific style consistency with temporal stability. This thesis proposes a research framework for specific style video generation based on LoRA (Low-Rank Adaptation) technology, aiming to explore a technical route that balances style expression and engineering feasibility under limited computational resources and sample sizes.
+
+The thesis first elaborates on the basic principles of Diffusion Models and Latent Diffusion frameworks, analyzing the advantages of LoRA parameter-efficient fine-tuning in specific style adaptation. In the data preparation stage, a stylized dataset containing 810 samples was constructed through standardized preprocessing and automated captioning of specific animation images. At the model training level, using Stable Diffusion 1.5 as the core, a LoRA injection strategy was designed, and the performance differences of various base models (StorybookRedmond, Counterfeit-V3.0) were compared under similar training intensities. Experimental results demonstrate that loading LoRA adapters enables the model to produce stable and observable style shifts in color distribution, line intensity, and scene organization. While base models with strong visual priors significantly enhance style transfer intensity, a trade-off between style purity and content fidelity must be considered.
+
+In the video validation stage, a recursive short video generation prototype was constructed, and no-reference temporal consistency evaluation metrics were introduced. Quantitative analysis shows that after loading the style LoRA, the Mean Absolute Difference (MAD) of adjacent frames and the Mean Edge Difference (MED) decreased, proving the effectiveness of migrating style capabilities to continuous frames. Addressing the Brightness Standard Deviation (LS) fluctuations exposed in the experiments, this thesis analyzes the underlying mechanisms and proposes future improvements involving explicit motion modules and structural control technologies. This research provides a reusable technical reference for independent creators and small teams to produce personalized video content.
 \end{enabstract}

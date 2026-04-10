@@ -23,24 +23,21 @@
 %%% ---- 定义页边距 ----- %%%
 \RequirePackage{geometry}
 \geometry{left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm,includefoot,xetex}
-\setlength{\headheight}{18.5pt}
+\setlength{\headheight}{0pt}
+\setlength{\headsep}{0pt}
 
 \RequirePackage{fancyhdr}             % 页眉页脚宏包
-\renewcommand{\headrulewidth}{0.5pt}  % 页眉线宽
+\renewcommand{\headrulewidth}{0pt}    % 页眉线宽
 \renewcommand{\footrulewidth}{0pt}    % 页脚线宽
 
 
 % 页眉线淡化
-\renewcommand{\headrule}{
-  \color{gray}
-  \hrule width\headwidth height\headrulewidth \vskip-\headrulewidth
-}
+\renewcommand{\headrule}{}
 
 
 % 页眉页脚样式
 \fancypagestyle{plain}{
     \fancyhf{}
-    \fancyhead[C]{\vspace{4pt}\textcolor{gray}{\zihao{5}武汉大学本科毕业论文（设计）}}
     \fancyfoot[C]{\zihao{5}\thepage}
 }
 
@@ -48,7 +45,6 @@
 % 含有页眉但无页码的样式
 \fancypagestyle{noPageNum}{
     \fancyhf{} 
-    \fancyhead[C]{\vspace{4pt}\textcolor{gray}{\zihao{5}武汉大学本科毕业论文（设计）}}
 }
 
 \pagestyle{plain}
@@ -89,7 +85,7 @@
 \renewcommand\cftsubsecpagefont{\songti\zihao{-4}}
 \renewcommand\cftsubsubsecpagefont{\songti\zihao{-4}}
 
-\renewcommand\cftchapafterpnum{\vskip5pt}
+\renewcommand\cftchapafterpnum{\vskip4pt}
 \renewcommand\cftsecafterpnum{\vskip3pt}
 \renewcommand\cftsubsecafterpnum{\vskip2pt}
 \setlength{\cftsecindent}{1.85em}
@@ -119,6 +115,9 @@
 
 % 使用tabularx创建占满宽度的表格
 \RequirePackage{tabularx, makecell}
+\newlength{\whutablewidth}
+\setlength{\whutablewidth}{1.06\textwidth}
+\renewcommand\tabularxcolumn[1]{m{#1}}
 \newcolumntype{L}{X}
 \newcolumntype{C}{>{\centering \arraybackslash}X}
 \newcolumntype{R}{>{\raggedleft \arraybackslash}X}
@@ -127,7 +126,7 @@
 \RequirePackage{booktabs}   % 做三线表的包
 \RequirePackage{etoolbox}   % 用于修改表格的包
 \AtBeginEnvironment{tabular}{\zihao{5}} % 表格字体大小 5 号
-\AtBeginEnvironment{tabularx}{\zihao{5}}
+\AtBeginEnvironment{tabularx}{\zihao{5}\renewcommand{\arraystretch}{1.35}}
 
 % 列表样式
 \RequirePackage{enumerate, enumitem}
@@ -311,6 +310,9 @@
 	\clearpage
     \begin{center} {\vspace*{0.5em} \heiti \zihao{-2} 摘 \hspace{2em} 要} \end{center}
     \baselineskip=23pt
+    \setlength{\parindent}{2em}
+    \setlength{\parskip}{0pt}
+    \noindent\hspace*{2em}\ignorespaces
 }{
 	\vspace*{2em}
 	\par\noindent {\heiti\zihao{-4} 关键词：} \cnkeyword
@@ -323,6 +325,9 @@
     \clearpage
     \begin{center} {\vspace*{0.5em} \heiti \zihao{-2} \textbf{ABSTRACT}} \end{center}
     \baselineskip=23pt
+    \setlength{\parindent}{2em}
+    \setlength{\parskip}{0pt}
+    \noindent\hspace*{2em}\ignorespaces
 }{
 	\vspace*{2em}
 	\par\noindent {\bfseries\zihao{-4} Keywords:} \enkeyword
