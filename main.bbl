@@ -1,0 +1,264 @@
+\begin{thebibliography}{40}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{#1}
+\expandafter\ifx\csname urlstyle\endcsname\relax\else
+  \urlstyle{same}\fi
+\expandafter\ifx\csname href\endcsname\relax
+  \DeclareUrlCommand\doi{\urlstyle{rm}}
+  \def\eprint#1#2{#2}
+\else
+  \def\doi#1{\href{https://doi.org/#1}{\nolinkurl{#1}}}
+  \let\eprint\href
+\fi
+
+\bibitem[J et~al.(2020)J, A, and P]{ref1}
+J H, A J, P A.
+\newblock Denoising diffusion probabilistic models [j]\allowbreak[Z].
+\newblock 2020.
+
+\bibitem[U et~al.(2022)U, A, D, et~al.]{ref2}
+U S, A P, D H, et~al.
+\newblock Make-a-video: Text-to-video generation without labeled video data
+  [j/ol]\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[J et~al.(2022)J, Y, P, et~al.]{ref3}
+J H~E, Y S, P W, et~al.
+\newblock Lora: Low-rank adaptation of large language models [c]//
+  international conference on learning representations (iclr),
+  2022\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[R et~al.(2022)R, A, D, et~al.]{ref4}
+R R, A B, D L, et~al.
+\newblock High-resolution image synthesis with latent diffusion models [c]//
+  proceedings of the ieee/cvf conference on computer vision and pattern
+  recognition (cvpr), 2022: 10684-10695\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[R et~al.(2023)R, S, J, et~al.]{ref5}
+R V, S B, J K~P, et~al.
+\newblock Phenaki: Variable length video generation from conditioning texts
+  [c]// international conference on learning representations (iclr),
+  2023\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[P et~al.(2021)P and A]{ref6}
+P D, A N.
+\newblock Diffusion models beat gans on image synthesis [j]\allowbreak[Z].
+\newblock 2021.
+
+\bibitem[A et~al.(2023)A, T, S, et~al.]{ref7}
+A B, T D, S K, et~al.
+\newblock Stable video diffusion: Scaling latent video diffusion models to
+  large datasets [j/ol]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[O et~al.(2024)O, H, O, et~al.]{ref8}
+O B~T, H C, O T, et~al.
+\newblock Lumiere: A space-time diffusion model for video generation [c]//
+  proceedings of the ieee/cvf conference on computer vision and pattern
+  recognition (cvpr), 2024\allowbreak[Z].
+\newblock 2024.
+
+\bibitem[N et~al.(2023)N, Y, V, et~al.]{ref9}
+N R, Y L, V J, et~al.
+\newblock Dreambooth: Fine-tuning text-to-image diffusion models for
+  subject-driven generation [c]// proceedings of the ieee/cvf conference on
+  computer vision and pattern recognition (cvpr), 2023:
+  22500-22510\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[R et~al.(2023)R, Y, Y, et~al.]{ref10}
+R G, Y A, Y A, et~al.
+\newblock An image is worth one word: Personalizing text-to-image generation
+  using textual inversion [c]// international conference on learning
+  representations (iclr), 2023\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[Z et~al.(2023)Z, Y, X, et~al.]{ref11}
+Z W~J, Y G, X W, et~al.
+\newblock Tune-a-video: One-shot tuning of image diffusion models for
+  text-to-video generation [c]// proceedings of the ieee/cvf international
+  conference on computer vision (iccv), 2023: 7623-7633\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[Y et~al.(2024)Y, C, A, et~al.]{ref12}
+Y G, C Y, A R, et~al.
+\newblock Animatediff: Animate your personalized text-to-image diffusion models
+  without specific tuning [c]// international conference on learning
+  representations (iclr), 2024\allowbreak[Z].
+\newblock 2024.
+
+\bibitem[H et~al.(2023)H, M, Y, et~al.]{ref13}
+H C, M X, Y H, et~al.
+\newblock Videocrafter1: Open diffusion models for high-quality video
+  generation [j/ol]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[L et~al.(2023)L, A, and M]{ref14}
+L Z, A R, M A.
+\newblock Adding conditional control to text-to-image diffusion models [c]//
+  proceedings of the ieee/cvf international conference on computer vision
+  (iccv), 2023: 3836-3847\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[L et~al.(2023)L, T, Z, et~al.]{ref15}
+L H, T G, Z L, et~al.
+\newblock Animate anyone: Consistent and controllable image-to-video synthesis
+  for character animation [j/ol]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[A et~al.(2022)A, R, K, et~al.]{ref16}
+A B, R R, K O, et~al.
+\newblock Retrieval-augmented diffusion models [c]// advances in neural
+  information processing systems (neurips), 2022, 35:
+  15309-15324\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[C et~al.(2023)C, X, L, et~al.]{ref17}
+C M, X W, L X, et~al.
+\newblock T2i-adapter: Learning adapters to dig out prior knowledge of
+  text-to-image diffusion models [c]// proceedings of the ieee/cvf
+  international conference on computer vision (iccv), 2023\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[Z et~al.(2024)Z, Q, H, et~al.]{ref18}
+Z X, Q D, H H, et~al.
+\newblock Simda: Simple diffusion adapter for efficient video generation [c]//
+  proceedings of the ieee/cvf conference on computer vision and pattern
+  recognition (cvpr), 2024\allowbreak[Z].
+\newblock 2024.
+
+\bibitem[T et~al.(2018)T, S, K, et~al.]{ref19}
+T U, S V~S, K K, et~al.
+\newblock Towards accurate generative models of video: A new metric
+  [j/ol]\allowbreak[Z].
+\newblock 2018.
+
+\bibitem[J et~al.(2023)J, H, D, et~al.]{ref20}
+J W, H Y, D C, et~al.
+\newblock Modelscope text-to-video technical report [j/ol]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[R et~al.(2022)R, Y, Y, et~al.]{ref21}
+R G, Y A, Y A, et~al.
+\newblock Designing a framework for personalization in text-to-image diffusion
+  models [j/ol]\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[C et~al.(2023)C, X, Y, et~al.]{ref22}
+C Q, X C, Y Z, et~al.
+\newblock Fatezero: Steering diffusion models for consistent video editing
+  [c]// proceedings of the ieee/cvf conference on computer vision and pattern
+  recognition (cvpr), 2023: 8281-8291\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[A et~al.(2021)A, W, C, et~al.]{ref23}
+A R, W K~J, C H, et~al.
+\newblock Learning transferable visual models from natural language supervision
+  [c]// international conference on machine learning (icml)\allowbreak[Z].
+\newblock 2021.
+
+\bibitem[C et~al.(2022)C, R, R, et~al.]{ref24}
+C S, R B, R V, et~al.
+\newblock Laion-5b: An open large-scale dataset for training next generation
+  image-to-text models [j]\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[O et~al.(2015)O, P, and T]{ref25}
+O R, P F, T B.
+\newblock U-net: Convolutional networks for biomedical image segmentation [c]//
+  international conference on medical image computing and computer-assisted
+  intervention\allowbreak[Z].
+\newblock 2015.
+
+\bibitem[A et~al.(2017)A, N, N, et~al.]{ref26}
+A V, N S, N P, et~al.
+\newblock Attention is all you need [j]\allowbreak[Z].
+\newblock 2017.
+
+\bibitem[J et~al.(2023)]{ref27}
+J S, et~al.
+\newblock Investigating the impact of base model priors on downstream adapter
+  tuning [r]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[M et~al.(2017)M, H, T, et~al.]{ref28}
+M H, H R, T U, et~al.
+\newblock Gans trained by a two time-scale update rule converge to a local nash
+  equilibrium [j]\allowbreak[Z].
+\newblock 2017.
+
+\bibitem[R et~al.(2018)R, P, A, et~al.]{ref29}
+R Z, P I, A E~A, et~al.
+\newblock The unreasonable effectiveness of deep features as a perceptual
+  metric [c]// proceedings of the ieee conference on computer vision and
+  pattern recognition (cvpr), 2018: 586-595\allowbreak[Z].
+\newblock 2018.
+
+\bibitem[M et~al.(2020)M, Y, J, et~al.]{ref30}
+M C, Y X, J M, et~al.
+\newblock Learning temporal coherence via self-supervision for gan-based video
+  generation [c]// proceedings of the ieee/cvf conference on computer vision
+  and pattern recognition (cvpr), 2020: 5833-5842\allowbreak[Z].
+\newblock 2020.
+
+\bibitem[J et~al.(2022)J and T]{ref31}
+J H, T S.
+\newblock Classifier-free diffusion guidance [j/ol]\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[J et~al.(2022)J, D, C, et~al.]{ref32}
+J L, D L, C X, et~al.
+\newblock Blip: Bootstrapping language-image pre-training for unified
+  vision-language understanding and generation [c]// icml, 2022\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[J et~al.(2023)J, D, S, et~al.]{ref33}
+J L, D L, S S, et~al.
+\newblock Blip-2: Bootstrapping language-image pre-training with frozen image
+  encoders and large language models [c]// icml, 2023\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[J et~al.(2022)J, T, A, et~al.]{ref34}
+J H, T S, A G, et~al.
+\newblock Video diffusion models [c]// neurips, 2022\allowbreak[Z].
+\newblock 2022.
+
+\bibitem[张建明\ 等(2024)张建明, 曾舒凡, 许志浩, and 等]{ref35}
+张建明, 曾舒凡, 许志浩, 等.
+\newblock 基于扩散模型的视频生成研究综述 [J]\allowbreak[Z].
+\newblock 2024.
+
+\bibitem[王瑞\ 等(2024)王瑞, 马思瑶, 严严, and 等]{ref36}
+王瑞, 马思瑶, 严严, 等.
+\newblock 扩散模型微调技术及其应用研究进展 [J]\allowbreak[Z].
+\newblock 2024.
+
+\bibitem[陈波\ 等(2023)陈波, 李洋, and 邓浩]{ref37}
+陈波, 李洋, 邓浩.
+\newblock 结合风格迁移与时间约束的生成式视频创作研究
+  [J]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[P et~al.(2023)P, J, P, et~al.]{ref38}
+P E, J C, P A, et~al.
+\newblock Structure and content-guided video synthesis with diffusion models
+  [c]// proceedings of the ieee/cvf international conference on computer vision
+  (iccv), 2023: 7346-7356\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[W et~al.(2023)W, E, et~al.]{ref39}
+W W, E X, et~al.
+\newblock Diffusion-video-consistency: Towards temporal consistent video
+  generation [j/ol]\allowbreak[Z].
+\newblock 2023.
+
+\bibitem[J et~al.(2021)J, S, and B]{ref40}
+J K, S R, B H~J.
+\newblock Robust video stabilization by optimizing warp parameters
+  [j]\allowbreak[Z].
+\newblock 2021.
+
+\end{thebibliography}

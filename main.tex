@@ -1,0 +1,45 @@
+%% Auto-generated from final.docx using the WHU bachelor thesis template.
+
+\documentclass[article]{whu-bachelor-style}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage{multirow}
+
+\renewcommand{\thefigure}{\arabic{chapter}-\arabic{figure}}
+\renewcommand{\thetable}{\arabic{chapter}-\arabic{table}}
+\renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
+
+\begin{document}
+%%----------- 封面部分 ----------- %%
+  \ctitle{基于LoRA技术的特定风格视频生成模型研究}
+  \cschool{计算机学院}
+  \cmajor{计算机科学与技术}
+  \cauthor{程森}
+  \cnumber{2022302111084}
+  \cadvisor{武 宇 教 授}
+  \cdate{二〇二六年四月}
+
+  \maketitlepage
+  \makestatement
+
+%%----------- 前言部分 ----------- %%
+  \include{pages/abstract}
+  \makecontents
+
+%%----------- 主体部分 ----------- %%
+  \include{pages/chapter1}
+  \include{pages/chapter2}
+  \include{pages/chapter3}
+  \include{pages/chapter4}
+
+%%----------- 结尾部分 ----------- %%
+  \clearpage
+  \phantomsection
+  \addcontentsline{toc}{chapter}{参考文献}
+  \bibliography{ref/refs}
+
+  \include{pages/thanks}
+  \include{pages/appendix}
+  \include{pages/null}
+
+\end{document}
