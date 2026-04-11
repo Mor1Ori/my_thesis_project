@@ -40,35 +40,35 @@
 \contentsline {subsection}{\numberline {3.3.3}训练目标与优化流程}{16}{subsection.3.3.3}%
 \contentsline {section}{\numberline {3.4}生成与评估模块实现}{17}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}单图推理与基线对比实现}{17}{subsection.3.4.1}%
-\contentsline {subsection}{\numberline {3.4.2}短视频生成原型实现}{18}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.2}短视频生成原型实现}{17}{subsection.3.4.2}%
 \contentsline {subsection}{\numberline {3.4.3}时序一致性评价指标设计}{18}{subsection.3.4.3}%
 \contentsline {section}{\numberline {3.5}关键算法描述}{19}{section.3.5}%
 \contentsline {subsection}{\numberline {3.5.1}图像预处理算法}{19}{subsection.3.5.1}%
 \contentsline {subsection}{\numberline {3.5.2}LoRA训练算法}{19}{subsection.3.5.2}%
 \contentsline {subsection}{\numberline {3.5.3}视频递推生成算法}{20}{subsection.3.5.3}%
-\contentsline {section}{\numberline {3.6}本章小结}{21}{section.3.6}%
+\contentsline {section}{\numberline {3.6}本章小结}{20}{section.3.6}%
 \contentsline {chapter}{\numberline { 4\hspace {.3em}}实验与结果分析}{22}{chapter.4}%
 \contentsline {section}{\numberline {4.1}实验设置}{22}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}实验目标与验证思路}{22}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}数据集与预处理结果}{23}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}实验环境与参数配置}{24}{subsection.4.1.3}%
+\contentsline {subsection}{\numberline {4.1.2}数据集与预处理结果}{22}{subsection.4.1.2}%
+\contentsline {subsection}{\numberline {4.1.3}实验环境与参数配置}{23}{subsection.4.1.3}%
 \contentsline {subsection}{\numberline {4.1.4}评价指标与结果呈现方式}{25}{subsection.4.1.4}%
 \contentsline {section}{\numberline {4.2}图像风格学习实验结果分析}{26}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}基于Stable Diffusion 1.5的短训验证结果}{26}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}caption组织增强实验分析}{28}{subsection.4.2.2}%
-\contentsline {subsection}{\numberline {4.2.3}不同底模长训结果比较}{29}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}图像阶段结果归纳}{31}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.2}caption组织增强实验分析}{27}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}不同底模长训结果比较}{28}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}图像阶段结果归纳}{30}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}视频原型实验与时序一致性分析}{31}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}视频原型实验方案}{31}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}时序一致性定量结果}{32}{subsection.4.3.2}%
-\contentsline {subsection}{\numberline {4.3.3}视频结果的定性观察与局限}{33}{subsection.4.3.3}%
-\contentsline {section}{\numberline {4.4}实验讨论}{34}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}风格学习有效性讨论}{34}{subsection.4.4.1}%
-\contentsline {subsection}{\numberline {4.4.2}指标与主观观感差异的原因分析}{34}{subsection.4.4.2}%
-\contentsline {subsection}{\numberline {4.4.3}当前方案的局限与后续优化方向}{35}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.3.2}时序一致性定量结果}{31}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}视频结果的定性观察与局限}{32}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}实验讨论}{33}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}风格学习有效性讨论}{33}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}指标与主观观感差异的原因分析}{33}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}当前方案的局限与后续优化方向}{34}{subsection.4.4.3}%
 \contentsline {section}{\numberline {4.5}本章小结}{35}{section.4.5}%
-\contentsline {chapter}{\numberline { 5\hspace {.3em}}总结与展望}{37}{chapter.5}%
-\contentsline {section}{\numberline {5.1}工作总结}{37}{section.5.1}%
-\contentsline {section}{\numberline {5.2}研究展望}{37}{section.5.2}%
-\contentsline {chapter}{参考文献}{39}{section*.16}%
-\contentsline {chapter}{致谢}{43}{section*.18}%
+\contentsline {chapter}{\numberline { 5\hspace {.3em}}总结与展望}{36}{chapter.5}%
+\contentsline {section}{\numberline {5.1}工作总结}{36}{section.5.1}%
+\contentsline {section}{\numberline {5.2}研究展望}{36}{section.5.2}%
+\contentsline {chapter}{参考文献}{38}{section*.13}%
+\contentsline {chapter}{致谢}{42}{section*.15}%

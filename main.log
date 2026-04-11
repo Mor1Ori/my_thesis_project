@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.4.10)  11 APR 2026 01:01
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2022/dev/Debian) (preloaded format=xelatex 2026.4.10)  11 APR 2026 14:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1597,7 +1597,7 @@ File: figures//chapter4_figure1_1.png Graphic file (type bmp)
  [26]
 File: figures//chapter4_figure2_1.png Graphic file (type bmp)
 <figures//chapter4_figure2_1.png>
- [27] [28]
+ [27]
 Overfull \hbox (6.76074pt too wide) in paragraph at lines 166--166
  [] 
  []
@@ -1617,11 +1617,12 @@ s(0)/m/n/12.045 Counterfeit-V3.0 \TU/FandolSong-Regular(1)/m/n/12.045 长 训 �
 |
  []
 
+[28]
 File: figures//chapter4_figure3_1.png Graphic file (type bmp)
 <figures//chapter4_figure3_1.png>
 File: figures//chapter4_figure4_1.png Graphic file (type bmp)
 <figures//chapter4_figure4_1.png>
-[29] [30] [31]
+ [29] [30]
 Overfull \hbox (4.08324pt too wide) in paragraph at lines 217--217
  [] 
  []
@@ -1706,7 +1707,7 @@ Overfull \hbox (0.95303pt too wide) in paragraph at lines 217--217
  []|\TU/TeXGyreTermes(0)/m/n/10.53937 +7.77%| 
  []
 
-
+[31]
 Overfull \hbox (3.72673pt too wide) in paragraph at lines 222--223
 []\TU/FandolSong-Regular(1)/m/n/12.045 但 在 亮 度 稳 定 性 方 面，| \TU/TeXGyreTermes(0)
 /m/n/12.045 LS \TU/FandolSong-Regular(1)/m/n/12.045 指 标 从 \TU/TeXGyreTermes(0)/
@@ -1715,25 +1716,25 @@ s(0)/m/n/12.045 0.018716\TU/FandolSong-Regular(1)/m/n/12.045 ，|  增 幅 约 �
 XGyreTermes(0)/m/n/12.045 11.72%\TU/FandolSong-Regular(1)/m/n/12.045 。|
  []
 
-[32] [33] [34]) [35] [36]
+[32] [33]) [34] [35]
 \openout2 = `pages/chapter5.aux'.
 
  (./pages/chapter5.tex
  5
-[37
+[36
 
 
 
 
-]) [38] (./main.bbl [39
+]) [37] (./main.bbl [38
 
 
 
 
-] [40] [41]) [42]
+] [39] [40]) [41]
 \openout2 = `pages/thanks.aux'.
 
- (./pages/thanks.tex) [43
+ (./pages/thanks.tex) [42
 
 
 
@@ -1741,7 +1742,7 @@ XGyreTermes(0)/m/n/12.045 11.72%\TU/FandolSong-Regular(1)/m/n/12.045 。|
 \openout2 = `pages/null.aux'.
 
 
-(./pages/null.tex) [44
+(./pages/null.tex) [43
 
 
 
@@ -1754,15 +1755,15 @@ XGyreTermes(0)/m/n/12.045 11.72%\TU/FandolSong-Regular(1)/m/n/12.045 。|
 (./pages/chapter4.aux) (./pages/chapter5.aux) (./pages/thanks.aux)
 (./pages/null.aux))
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: EB5E8316D5223848CC3AC934CD130E9F;9679.
+(rerunfilecheck)             Checksum: 96FFE9A793F982BC71956A051F4731A5;9679.
  ) 
 Here is how much of TeX's memory you used:
- 44762 strings out of 477728
- 1074622 string characters out of 5842238
- 1456673 words of memory out of 5000000
- 64559 multiletter control sequences out of 15000+600000
+ 44761 strings out of 477728
+ 1074604 string characters out of 5842238
+ 1455674 words of memory out of 5000000
+ 64558 multiletter control sequences out of 15000+600000
  492379 words of font info for 169 fonts, out of 8000000 for 9000
  264 hyphenation exceptions out of 8191
- 103i,20n,105p,1236b,605s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 103i,20n,105p,1236b,567s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.xdv (52 pages, 714100 bytes).
+Output written on main.xdv (51 pages, 705708 bytes).
