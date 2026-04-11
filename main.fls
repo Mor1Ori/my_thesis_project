@@ -1558,6 +1558,9 @@ INPUT ./pages/chapter1.tex
 INPUT pages/chapter1.tex
 INPUT ./pages/chapter1.tex
 INPUT pages/chapter1.tex
+INPUT ./figures//chapter1_figure1.png
+INPUT ./figures//chapter1_figure1.png
+INPUT figures//chapter1_figure1.png
 INPUT ./pages/chapter2.tex
 INPUT ./pages/chapter2.tex
 INPUT ./pages/chapter2.tex
