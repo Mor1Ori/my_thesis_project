@@ -16,6 +16,15 @@
 
 在文本条件生成任务中，扩散模型还需要引入条件信息来控制生成方向。Classifier-Free Guidance进一步提出，无需额外训练分类器，就可以通过同时学习有条件与无条件两个分支，在采样阶段对二者的预测结果进行线性组合，从而在样本多样性和语义一致性之间取得平衡\cite{ref31}。该方法已经成为现代文生图模型中的标准采样策略。对于本研究而言，提示词、负向提示词以及guidance scale等参数本质上都与这一引导机制密切相关，它决定了生成结果是更强调文本约束，还是保留更多底模的自由生成能力。
 
+扩散模型中前向加噪与反向去噪之间的对应关系如图\ref{fig:ch2-diffusion-process}所示。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.92\textwidth]{chapter2_figure1_1.png}
+  \caption{扩散模型的前向与反向扩散过程}
+  \label{fig:ch2-diffusion-process}
+\end{figure}
+
 \section{潜空间扩散模型与Stable Diffusion}
 
 \subsection{潜空间表示与VAE压缩机制}
@@ -35,6 +44,15 @@
 \subsection{LoRA的基本原理}
 
 LoRA是一种典型的参数高效微调方法，其核心思想是：在不直接更新原始大模型权重的前提下，用两个低秩矩阵近似表示权重更新量。Hu等人指出，许多大模型在下游任务适配时，真正有效的权重变化往往具有较低的内在秩，因此没有必要对全部参数进行全量更新\cite{ref3}。基于这一认识，LoRA将某一层的权重更新写为ΔW=BA，其中A和B的秩远小于原始权重矩阵的维度，训练时只优化这两个小矩阵，而冻结底模原有参数。这样既能显著减少训练参数量，也不会改变原始模型的主体结构。
+
+LoRA与常规全参数微调在参数更新范围和训练代价上的差异，可由图\ref{fig:ch2-lora-vs-finetune}进一步说明。
+
+\begin{figure}[htbp]
+  \centering
+  \includegraphics[width=0.92\textwidth]{chapter2_figure2_1.png}
+  \caption{LoRA与常规微调的原理对比}
+  \label{fig:ch2-lora-vs-finetune}
+\end{figure}
 
 LoRA的优势主要体现在三个方面。首先，它大幅降低了显存需求与训练成本，使大模型在消费级显卡上的定制训练成为可能；其次，LoRA训练得到的适配器文件体积较小，便于存储、切换和复用；最后，由于原始底模权重保持不变，多个不同风格或任务的LoRA可以在同一底模上独立训练并灵活加载\cite{ref3}。对于毕业设计这类需要在有限周期内完成多轮实验验证的任务而言，LoRA具有较高的实用性。它使研究者能够把更多精力放在数据集选择、提示词设计、训练步数控制和风格效果分析上，而不必长期受制于全参数微调带来的高昂资源成本。
 

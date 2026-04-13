@@ -1571,6 +1571,12 @@ INPUT ./pages/chapter2.tex
 INPUT pages/chapter2.tex
 INPUT ./pages/chapter2.tex
 INPUT pages/chapter2.tex
+INPUT ./figures//chapter2_figure1_1.png
+INPUT ./figures//chapter2_figure1_1.png
+INPUT figures//chapter2_figure1_1.png
+INPUT ./figures//chapter2_figure2_1.png
+INPUT ./figures//chapter2_figure2_1.png
+INPUT figures//chapter2_figure2_1.png
 INPUT ./pages/chapter3.tex
 INPUT ./pages/chapter3.tex
 INPUT ./pages/chapter3.tex
@@ -1581,6 +1587,12 @@ INPUT ./pages/chapter3.tex
 INPUT pages/chapter3.tex
 INPUT ./pages/chapter3.tex
 INPUT pages/chapter3.tex
+INPUT ./figures//chapter3_figure1.png
+INPUT ./figures//chapter3_figure1.png
+INPUT figures//chapter3_figure1.png
+INPUT ./figures//chapter3_figure2.png
+INPUT ./figures//chapter3_figure2.png
+INPUT figures//chapter3_figure2.png
 INPUT ./pages/chapter4.tex
 INPUT ./pages/chapter4.tex
 INPUT ./pages/chapter4.tex
