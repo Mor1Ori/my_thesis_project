@@ -1558,9 +1558,12 @@ INPUT ./pages/chapter1.tex
 INPUT pages/chapter1.tex
 INPUT ./pages/chapter1.tex
 INPUT pages/chapter1.tex
-INPUT ./figures//chapter1_figure1.png
-INPUT ./figures//chapter1_figure1.png
-INPUT figures//chapter1_figure1.png
+INPUT ./figures/chapter1_figure1_1_1.png
+INPUT ./figures/chapter1_figure1_1_1.png
+INPUT figures/chapter1_figure1_1_1.png
+INPUT ./figures/chapter1_figure1_new.png
+INPUT ./figures/chapter1_figure1_new.png
+INPUT figures/chapter1_figure1_new.png
 INPUT ./pages/chapter2.tex
 INPUT ./pages/chapter2.tex
 INPUT ./pages/chapter2.tex
