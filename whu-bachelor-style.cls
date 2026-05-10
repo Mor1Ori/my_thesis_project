@@ -170,6 +170,14 @@
 \setmainfont[Ligatures=Rare]{TeX Gyre Termes}
 \setsansfont[Ligatures=Rare]{TeX Gyre Heros}
 \setmonofont[Ligatures=Rare]{TeX Gyre Cursor}
+% 为生僻汉字补充后备字体，避免参考文献作者名等位置出现缺字
+\setCJKfallbackfamilyfont{\CJKrmdefault}{Droid Sans Fallback}
+\setCJKfallbackfamilyfont{\CJKsfdefault}{Droid Sans Fallback}
+\setCJKfallbackfamilyfont{\CJKttdefault}{Droid Sans Fallback}
+\setCJKfallbackfamilyfont{zhsong}{Droid Sans Fallback}
+\setCJKfallbackfamilyfont{zhhei}{Droid Sans Fallback}
+\setCJKfallbackfamilyfont{zhfs}{Droid Sans Fallback}
+\setCJKfallbackfamilyfont{zhkai}{Droid Sans Fallback}
 
 \renewcommand{\algorithmcfname}{算法}          % 算法两字用中文显示
 
@@ -275,6 +283,12 @@
 }
 
 % 论文申明页
+\newcommand{\statementstudentsignature}{%
+  \raisebox{-0.35cm}{\includegraphics[height=0.95cm]{Signature/Signature_s.png}}}
+\newcommand{\statementadvisorsignature}{%
+  \raisebox{-0.35cm}{\includegraphics[height=0.95cm]{Signature/Signature_d.jpg}}}
+\newcommand{\statementdate}{2026年4月15日}
+
 \def\makestatement{
   \thispagestyle{empty}
   \vspace*{\fill} % 顶部填充
@@ -285,9 +299,9 @@
   本人郑重声明：所呈交的论文（设计），是本人在指导教师的指导下，严格按照学校和学院有关规定完成的。除文中已经标明引用的内容外，本论文（设计）不包含任何其他个人或集体已发表及撰写的研究成果。对本论文（设计）做出贡献的个人和集体，均已在文中以明确方式标明。本人承诺在论文（设计）工作过程中没有伪造数据等行为。若在本论文（设计）中有侵犯任何方面知识产权的行为，由本人承担相应的法律责任。
   \vspace*{30pt}\newline
   \par\noindent\hfill
-  \makebox[10cm][r]{作者签名：{\hspace{2.5cm}} 指导教师签名：{\hspace{2cm}}}
+  \makebox[10cm][r]{作者签名：\statementstudentsignature \hspace{1.0cm} 指导教师签名：\statementadvisorsignature}
   \par\noindent\hfill
-  \makebox[10cm][r]{日\hspace{2em}期： \hspace{2.5cm} 年\qquad 月\qquad 日\hspace{2cm}}\par}
+  \makebox[10cm][r]{日\hspace{2em}期：\statementdate \hspace{1.7cm}}\par}
 
   \vspace*{100pt}
   \begin{center}{\heiti \zihao{-2} 版权使用授权书}\end{center}
@@ -297,9 +311,9 @@
   本人完全了解武汉大学有权保留并向有关部门或机构送交本论文（设计）的复印件和电子版，允许本论文（设计）被查阅和借阅。本人授权武汉大学将本论文的全部或部分内容编入有关数据进行检索和传播，可以采用影印、缩印或扫描等复制手段保存和汇编本论文（设计）。
   \vspace*{30pt}\newline
   \par\noindent\hfill
-  \makebox[10cm][r]{作者签名：{\hspace{2.5cm}} 指导教师签名：{\hspace{2cm}}}
+  \makebox[10cm][r]{作者签名：\statementstudentsignature \hspace{1.0cm} 指导教师签名：\statementadvisorsignature}
   \par\noindent\hfill
-  \makebox[10cm][r]{日\hspace{2em}期： \hspace{2.5cm} 年\qquad 月\qquad 日\hspace{2cm}}\par}
+  \makebox[10cm][r]{日\hspace{2em}期：\statementdate \hspace{1.7cm}}\par}
   \vspace*{\fill} % 顶部填充
 }
 

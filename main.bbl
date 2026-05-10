@@ -153,12 +153,13 @@ WANG J, YUAN H, CHEN D, et~al.
 \newblock 2023.
 \newblock DOI: \doi{10.48550/arXiv.2308.06571}.
 
-\bibitem[Gal et~al.(2022)Gal, Alaluf, Atzmon, et~al.]{ref21}
+\bibitem[Gal et~al.(2022)Gal, Alaluf, Atzmon, Patashnik, Bermano, Chechik, and
+  Cohen-Or]{ref21}
 GAL R, ALALUF Y, ATZMON Y, et~al.
-\newblock {Designing a Framework for Personalization in Text-to-Image Diffusion
-  Models}\allowbreak[EB/OL].
+\newblock {An Image is Worth One Word: Personalizing Text-to-Image Generation
+  Using Textual Inversion}\allowbreak[EB/OL].
 \newblock 2022.
-\newblock DOI: \doi{10.48550/arXiv.2208.12247}.
+\newblock DOI: \doi{10.48550/arXiv.2208.01618}.
 
 \bibitem[Qi et~al.(2023)Qi, Cun, Zhang, et~al.]{ref22}
 QI C, CUN X, ZHANG Y, et~al.
@@ -194,11 +195,12 @@ VASWANI A, SHAZEER N, PARMAR N, et~al.
 \newblock {Attention Is All You Need}\allowbreak[J].
 \newblock Advances in Neural Information Processing Systems, 2017, 30.
 
-\bibitem[Smith et~al.(2023)]{ref27}
-SMITH J, et~al.
-\newblock {Investigating the Impact of Base Model Priors on Downstream Adapter
-  Tuning}\allowbreak[R].
-\newblock Technical Report, 2023.
+\bibitem[Sohn et~al.(2023)Sohn, Ruiz, Lee, Castro~Chin, Blok, Chang, Barber,
+  Jiang, Entis, Li, Hao, Essa, Rubinstein, and Krishnan]{ref27}
+SOHN K, RUIZ N, LEE K, et~al.
+\newblock {StyleDrop: Text-to-Image Generation in Any Style}\allowbreak[EB/OL].
+\newblock 2023.
+\newblock DOI: \doi{10.48550/arXiv.2306.00983}.
 
 \bibitem[Heusel et~al.(2017)Heusel, Ramsauer, Unterthiner, et~al.]{ref28}
 HEUSEL M, RAMSAUER H, UNTERTHINER T, et~al.
@@ -242,27 +244,35 @@ LI J, LI D, SAVARESE S, et~al.
 Proceedings of the 40th International Conference on Machine Learning.
 \newblock PMLR, 2023.
 
-\bibitem[Ho et~al.(2022)Ho, Salimans, Gritsenko, et~al.]{ref34}
+\bibitem[Ho et~al.(2022)Ho, Salimans, Gritsenko, Chan, Norouzi, and
+  Fleet]{ref34}
 HO J, SALIMANS T, GRITSENKO A, et~al.
-\newblock {Video Diffusion Models}\allowbreak[C]//\allowbreak
-Advances in Neural Information Processing Systems.
+\newblock {Video Diffusion Models}\allowbreak[EB/OL].
 \newblock 2022.
+\newblock DOI: \doi{10.48550/arXiv.2204.03458}.
 
-\bibitem[张建明\ 等(2024)张建明, 曾舒凡, and 许志浩]{ref35}
-张建明, 曾舒凡, 许志浩.
-\newblock 基于扩散模型的视频生成研究综述\allowbreak[J].
-\newblock 中国图象图形学报, 2024, 29\allowbreak (3): 583-601.
-
-\bibitem[王瑞\ 等(2024)王瑞, 马思瑶, and 严严]{ref36}
-王瑞, 马思瑶, 严严.
-\newblock 扩散模型微调技术及其应用研究进展\allowbreak[J].
-\newblock 计算机科学, 2024.
-
-\bibitem[陈波\ 等(2023)陈波, 李洋, and 邓浩]{ref37}
-陈波, 李洋, 邓浩.
+\bibitem[郑屹\ 等(2025)郑屹, 黄向, 秦菲儿, 梁缘, 黄子瑄,
+  曹炎培, 陶鑫, 郑明悟, 杨皓天, 万鹏飞, 陈京炜, and
+  黄心渊]{ref35}
+郑屹, 黄向, 秦菲儿, 等.
 \newblock
-  结合风格迁移与时间约束的生成式视频创作研究\allowbreak[J].
-\newblock 包装工程, 2023, 44\allowbreak (20): 12-21.
+  2D/3D生成式人工智能技术发展及创意产业应用\allowbreak[J/OL].
+\newblock 中国图象图形学报, 2025, 30\allowbreak (6): 1953-1984.
+\newblock DOI: \doi{10.11834/jig.250005}.
+
+\bibitem[殷炯\ 等(2023)殷炯, 张哲东, 高宇涵, 杨智文, 李亮,
+  肖芒, 孙垚棋, and 颜成钢]{ref36}
+殷炯, 张哲东, 高宇涵, 等.
+\newblock 视觉语言预训练综述\allowbreak[J/OL].
+\newblock 软件学报, 2023, 34\allowbreak (5): 2000-2023.
+\newblock DOI: \doi{10.13328/j.cnki.jos.006774}.
+
+\bibitem[江俊君\ 等(2023)江俊君, 程豪, 李震宇, 刘贤明, and
+  王中元]{ref37}
+江俊君, 程豪, 李震宇, 等.
+\newblock 深度学习视频超分辨率技术综述\allowbreak[J/OL].
+\newblock 中国图象图形学报, 2023, 28\allowbreak (7): 1927-1964.
+\newblock DOI: \doi{10.11834/jig.220130}.
 
 \bibitem[Esser et~al.(2023)Esser, Chiu, Atighehchian, et~al.]{ref38}
 ESSER P, CHIU J, ATIGHEHCHIAN P, et~al.
@@ -271,17 +281,19 @@ ESSER P, CHIU J, ATIGHEHCHIAN P, et~al.
 Proceedings of the IEEE/CVF International Conference on Computer Vision.
 \newblock 2023: 7346-7356.
 
-\bibitem[Wang et~al.(2023)Wang, Xie, et~al.]{ref39}
-WANG W, XIE E, et~al.
-\newblock {Diffusion-Video-Consistency: Towards Temporal Consistent Video
-  Generation}\allowbreak[EB/OL].
-\newblock 2023.
-\newblock DOI: \doi{10.48550/arXiv.2311.16104}.
+\bibitem[Xue et~al.(2014)Xue, Zhang, Mou, and Bovik]{ref39}
+XUE W, ZHANG L, MOU X, et~al.
+\newblock {Gradient Magnitude Similarity Deviation: A Highly Efficient
+  Perceptual Image Quality Index}\allowbreak[J/OL].
+\newblock IEEE Transactions on Image Processing, 2014, 23\allowbreak (2):
+  668-695.
+\newblock DOI: \doi{10.1109/TIP.2013.2293423}.
 
-\bibitem[Kopf et~al.(2021)Kopf, Rong, and Huang]{ref40}
-KOPF J, RONG S, HUANG J~B.
-\newblock {Robust Video Stabilization by Optimizing Warp
-  Parameters}\allowbreak[J].
-\newblock ACM Transactions on Graphics, 2021, 40\allowbreak (4): 1-16.
+\bibitem[Chen et~al.(2024)Chen, Pan, Cai, and Phung]{ref40}
+CHEN S, PAN Z, CAI J, et~al.
+\newblock {PaRa: Personalizing Text-to-Image Diffusion via Parameter Rank
+  Reduction}\allowbreak[EB/OL].
+\newblock 2024.
+\newblock DOI: \doi{10.48550/arXiv.2406.05641}.
 
 \end{thebibliography}
