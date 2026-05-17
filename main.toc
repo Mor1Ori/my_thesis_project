@@ -57,10 +57,10 @@
 \contentsline {subsection}{\numberline {4.2.1}基于Stable Diffusion 1.5的短训验证结果}{29}{subsection.4.2.1}%
 \contentsline {subsection}{\numberline {4.2.2}caption组织增强实验分析}{30}{subsection.4.2.2}%
 \contentsline {subsection}{\numberline {4.2.3}不同底模长训结果比较}{31}{subsection.4.2.3}%
-\contentsline {subsection}{\numberline {4.2.4}图像阶段结果归纳}{33}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.4}图像阶段结果归纳}{34}{subsection.4.2.4}%
 \contentsline {section}{\numberline {4.3}视频原型实验与时序一致性分析}{34}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}视频原型实验方案}{34}{subsection.4.3.1}%
-\contentsline {subsection}{\numberline {4.3.2}时序一致性定量结果}{34}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.2}时序一致性定量结果}{35}{subsection.4.3.2}%
 \contentsline {subsection}{\numberline {4.3.3}视频结果的定性观察与局限}{36}{subsection.4.3.3}%
 \contentsline {section}{\numberline {4.4}实验讨论}{36}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}风格学习有效性讨论}{36}{subsection.4.4.1}%

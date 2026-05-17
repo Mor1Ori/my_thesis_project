@@ -23,31 +23,49 @@
 %%% ---- 定义页边距 ----- %%%
 \RequirePackage{geometry}
 \geometry{left=3.17cm,right=3.17cm,top=2.54cm,bottom=2.54cm,includefoot,xetex}
-\setlength{\headheight}{0pt}
-\setlength{\headsep}{0pt}
+\setlength{\headheight}{18.5pt}
 
 \RequirePackage{fancyhdr}             % 页眉页脚宏包
-\renewcommand{\headrulewidth}{0pt}    % 页眉线宽
+\renewcommand{\headrulewidth}{0.5pt}  % 页眉线宽
 \renewcommand{\footrulewidth}{0pt}    % 页脚线宽
 
 
 % 页眉线淡化
-\renewcommand{\headrule}{}
+\renewcommand{\headrule}{
+  \color{gray}
+  \hrule width\headwidth height\headrulewidth \vskip-\headrulewidth
+}
 
 
-% 页眉页脚样式
-\fancypagestyle{plain}{
+% 前置部分无页眉，保留页码
+\newcommand{\whufrontpagestyle}{
+  \fancypagestyle{plain}{
     \fancyhf{}
     \fancyfoot[C]{\zihao{5}\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+  }
+  \pagestyle{plain}
+}
+
+% 正文部分页眉页脚样式
+\newcommand{\whubodypagestyle}{
+  \fancypagestyle{plain}{
+    \fancyhf{}
+    \fancyhead[C]{\vspace{4pt}\textcolor{gray}{\zihao{5}武汉大学本科毕业论文（设计）}}
+    \fancyfoot[C]{\zihao{5}\thepage}
+    \renewcommand{\headrulewidth}{0.5pt}
+  }
+  \pagestyle{plain}
 }
 
 
 % 含有页眉但无页码的样式
 \fancypagestyle{noPageNum}{
     \fancyhf{} 
+    \fancyhead[C]{\vspace{4pt}\textcolor{gray}{\zihao{5}武汉大学本科毕业论文（设计）}}
 }
 
-\pagestyle{plain}
+\whufrontpagestyle
 
 %%% ---- 定义标题和段落样式 ----- %%%
 % 定义1.5倍行距
@@ -100,6 +118,7 @@
     \cleardoublepage
     \pagenumbering{arabic}            % 切换为阿拉伯数字
     \setcounter{page}{1}
+    \whubodypagestyle
 
     \renewcommand{\baselinestretch}{1}\normalsize
     \baselineskip=23pt                % 正文行距为 23 磅
